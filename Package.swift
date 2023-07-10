@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "UniSDS",
-            targets: ["UniSDS"]),
+            targets: ["UniSDS", "UniButton", "UniCard", "UniAlert", "UniNavigationBar"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,6 +21,19 @@ let package = Package(
         .target(
             name: "UniSDS",
             dependencies: []),
+        .target(
+            name: "UniButton",
+            dependencies: []),
+        .target(
+            name: "UniCard",
+            dependencies: []),
+        .target(
+            name: "UniAlert",
+            dependencies: []),
+        .target(
+            name: "UniNavigationBar",
+            dependencies: []),
+        
         .testTarget(
             name: "UniSDSTests",
             dependencies: ["UniSDS"]),
