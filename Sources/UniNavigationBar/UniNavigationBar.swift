@@ -12,7 +12,7 @@ public class UniNavigationBar: UIView {
         return button
     }()
     
-    let titleLabel: UILabel = {
+    public let titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
         return label
